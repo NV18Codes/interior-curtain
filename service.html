@@ -31,27 +31,22 @@
 
 <body>
     <!-- Topbar Start -->
+    <!-- Topbar Start -->
     <div class="container-fluid bg-dark py-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="col-md-6 offset-md-6 text-right d-flex justify-content-end">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-white pr-3" href="">FAQs</a>
-                        <span class="text-white">|</span>
-                        <a class="text-white px-3" href="">Help</a>
-                        <span class="text-white">|</span>
-                        <a class="text-white pl-3" href="">Support</a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-white px-3" href="">
+                        <a class="text-white px-3" href="https://www.facebook.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="text-white px-3" href="https://wa.me/917349343337">
+                        <a class="text-white px-3" href="https://wa.me/917349343337" target="_blank"
+                            rel="noopener noreferrer" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a class="text-white px-3" href="https://www.instagram.com/ms_decor_/">
+                        <a class="text-white px-3" href="https://www.instagram.com/ms_decor_/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -63,11 +58,38 @@
 
 
     <!-- Navbar Start -->
+    <!-- Navbar Start -->
+    <style>
+        .nav-link {
+            position: relative;
+            color: white;
+            transition: all 0.3s ease;
+            /* Smooth hover effect */
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+            background-color: beige;
+            color: beige;
+            transition: all 0.3s ease;
+            /* Matches hover transition */
+        }
+
+        /* Active link style */
+        .nav-link.active {
+            text-decoration: underline;
+            background-color: beige;
+            color: black;
+            font-weight: bold;
+            /* Optional for emphasis */
+        }
+    </style>
+
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container position-relative" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+            <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="index.html" class="navbar-brand">
-                    <img src="img\logo.jpg" alt="Logo" class="d-inline-block align-middle mr-2"
+                    <img src="img/logo.jpg" alt="Logo" class="d-inline-block align-middle mr-2"
                         style="width: 80px; height: auto;">
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -76,17 +98,7 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <!--<div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="gallery.html" class="dropdown-item">Blinds & Curtains</a>
-                                <a href="gallery.html" class="dropdown-item">Carpets</a>
-                                <a href="gallery.html" class="dropdown-item">Flooring</a>
-                                <a href="gallery.html" class="dropdown-item">Sofas</a>
-                                <a href="gallery.html" class="dropdown-item">Wallpapers</a>
-                            </div>
-                        </div>-->
+                        <a href="about.html" class="nav-item nav-link ">About Us</a>
                         <a href="service.html" class="nav-item nav-link active">Services</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Gallery</a>
@@ -95,57 +107,15 @@
                                 <a href="photo.html" class="dropdown-item">Video Gallery</a>
                             </div>
                         </div>
-                        <a href="service.html" class="nav-item nav-link">Blog</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
+
     <!-- Navbar End -->
-
-
-    <!-- Under Nav Start -->
-    <div class="container-fluid bg-white py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 text-left mb-3 mb-lg-0">
-                    <div class="d-inline-flex text-left">
-                        <h1 class="flaticon-office font-weight-normal text-primary m-0 mr-3"></h1>
-                        <div class="d-flex flex-column">
-                            <h5>Our Office</h5>
-                            <p class="m-0">
-                                <a href="https://maps.app.goo.gl/rUxBpWJAhnvym55n7" target="_blank"
-                                    rel="noopener noreferrer"> HSR Layout Sector-2<br>Bangalore -
-                                    560102</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 text-left text-lg-center mb-3 mb-lg-0">
-                    <div class="d-inline-flex text-left">
-                        <h1 class="flaticon-email font-weight-normal text-primary m-0 mr-3"></h1>
-                        <div class="d-flex flex-column">
-                            <h5>Email Us</h5>
-                            <p class="m-0"><a href="mailto:msdecor13@gmail.com">msdecor13@gmail.com</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-left text-lg-right mb-3 mb-lg-0">
-                    <div class="d-inline-flex text-left">
-                        <h1 class="flaticon-telephone font-weight-normal text-primary m-0 mr-3"></h1>
-                        <div class="d-flex flex-column">
-                            <h5>Call Us</h5>
-                            <p class="m-0">+ 91-7349343337 | <br> +91-7090333496</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Under Nav End -->
-
 
     <!-- Page Header Start -->
     <div class="container-fluid bg-secondary py-5">
@@ -329,7 +299,7 @@
                     <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
                     <a class="text-white mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Our
                         Services</a>
-                    <a class="text-white mb-2" href="single.html"><i class="fa fa-angle-right mr-2"></i>Gallery</a>
+                    <a class="text-white mb-2" href="photo.html"><i class="fa fa-angle-right mr-2"></i>Gallery</a>
                     <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                 </div>
             </div>
