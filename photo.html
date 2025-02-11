@@ -2,24 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-   
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>MS Decor Furnishing - Stylish & Comfortable Home Interiors</title>
-    <meta name="author" content="MS Decor Furnishing"/>
-    <meta name="description" content="Upgrade your home with MS Decor Furnishing. Explore premium curtains, blinds, sofas, and home decor essentials for a stylish and cozy living space."/>
-    <meta name="keywords" content="home decor, furnishings, curtains, blinds, sofas, interior design, MS Decor Furnishing"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta property="og:url" content="https://msdecorfurnishing.com/"/>
-    <meta property="og:site_name" content="MS Decor Furnishing"/>
-    <meta property="og:title" content="MS Decor Furnishing - Stylish & Comfortable Home Interiors"/>
-    <meta property="og:description" content="Explore premium home decor and furnishing solutions. Transform your space with style and comfort."/>
-    <meta property="og:type" content="website"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="MS Decor Furnishing - Stylish & Comfortable Home Interiors"/>
-    <meta name="twitter:description" content="Upgrade your home with premium decor and furnishing solutions."/>
-    
-    
+    <meta charset="utf-8">
+    <title>M S Decor Furnishing</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -126,7 +114,13 @@
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link ">About Us</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="photo.html" class="nav-item nav-link active">Gallery</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Gallery</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="photo.html" class="dropdown-item">Photos Gallery</a>
+                                <a href="single.html" class="dropdown-item">Video Gallery</a>
+                            </div>
+                        </div>
                         <a href="blog.html" class="nav-item nav-link">Blog</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
@@ -252,7 +246,8 @@ opacity: 100%;">
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                <img src="img/blinds/blind-1.jpeg" class="img-fluid modal-img" alt="Blinds Image 1">
+                                <img src="img/blinds/blind-1.jpeg" class="img-fluid modal-img"
+                                    alt="Blinds Image 1">
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                 <img src="img/blinds/blind-2.jpeg" class="img-fluid modal-img" alt="Blinds Image 2">
@@ -509,6 +504,7 @@ opacity: 100%;">
         /* Ensures the modal images are of the same size */
         .modal-img {
             height: 200px;
+            width: 200px;
             object-fit: cover;
             /* This will maintain the aspect ratio and crop the image if necessary */
         }
